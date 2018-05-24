@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp"
+              android:background="@drawable/listview">
+
+    <CheckedTextView
+        android:text="Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_title"
+        android:paddingTop="10dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:textSize="20dp"
+        />
+
+    <CheckedTextView
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:background="#FF909090" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+        >
+
+        <CheckedTextView
+            android:text="Did: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textStyle="italic"
+            android:textSize="16dp"/>
+
+        <CheckedTextView
+            android:hint="Did"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_did"
+            android:padding="5dp"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+        >
+
+        <CheckedTextView
+            android:text="Date: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:padding="5dp"
+            android:textSize="16dp"/>
+
+
+        <CheckedTextView
+            android:hint="Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_date"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textSize="16dp"/>
+
+
+        <CheckedTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:text="Time: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:paddingLeft="20dp"
+            android:textSize="16dp"/>
+
+
+        <CheckedTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:hint="Time "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_time"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
+        <CheckedTextView
+            android:text="Address: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textStyle="italic"
+            android:padding="5dp"
+            android:textSize="16dp"
+            />
+
+        <CheckedTextView
+            android:hint="Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_address"
+            android:paddingTop="10dp"
+            android:padding="5dp"
+            android:textSize="16dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
+        <CheckedTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="Content: "
+            android:paddingTop="10dp"
+            android:padding="5dp"
+            android:textSize="16dp"
+            />
+        <CheckedTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_content"
+            android:hint="Content"
+            android:paddingTop="10dp"
+            android:padding="5dp"
+            android:textSize="16dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

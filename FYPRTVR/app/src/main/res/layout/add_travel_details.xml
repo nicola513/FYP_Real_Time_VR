@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travelogue Details"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:textSize="25dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="5dp">
+
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Date..."
+            android:textSize="@dimen/detail_textsize"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_grey" />
+
+
+        <EditText
+            android:id="@+id/address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Address..."
+            android:textSize="@dimen/detail_textsize"
+            android:layout_below="@+id/date"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:ems="12"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_grey" />
+
+        <ImageButton
+            android:id="@+id/search_address"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_toRightOf="@+id/address_text"
+            android:background="@drawable/find_map"
+            android:layout_below="@+id/date"/>
+
+        <TextView
+            android:id="@+id/position"
+            android:hint="position"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_address"/>
+
+        <EditText
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/position"
+            android:hint="Title..."
+            android:textSize="@dimen/detail_textsize"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_grey" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/content_text_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:layout_below="@+id/content"
+                    android:fillViewport="true">
+
+        <EditText
+            android:id="@+id/content_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/context"
+            android:gravity="top"
+            android:textSize="@dimen/detail_textsize"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:background="@color/input_login_hint"
+            android:textColor="@color/white"
+            android:textColorHint="@color/input_login_hint" />
+
+        </ScrollView>
+
+
+
+        <TextView
+            android:id="@+id/photoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo:"
+            android:textSize="@dimen/detail_textsize"
+            android:layout_below="@+id/content_text_scroll"
+            android:layout_alignParentStart="true"/>
+
+        <ImageButton
+            android:id="@+id/photoViewBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/photoName"
+            android:layout_toRightOf="@+id/photoView"
+            android:background="@drawable/choose_img"
+            />
+
+        <ImageView
+            android:id="@+id/photoView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:layout_below="@+id/photoName"
+            android:src="@drawable/default_img"
+            android:layout_alignParentStart="true"/>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/photoView">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/saveDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Content"
+            android:textSize="@dimen/detail_textsize"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:layout_below="@+id/title_text"
+            android:layout_alignParentStart="true"/>
+
+
+    </RelativeLayout>
+</ScrollView>
+    <!--
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+                        android:background="@color/lightBlue">
+        <TextView
+            android:id="@+id/tid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travelogue ID:"/>
+        <TextView
+            android:id="@+id/tid_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tid"/>
+        <TextView
+            android:id="@+id/did"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details ID:"
+            android:layout_below="@+id/tid"/>
+        <TextView
+            android:id="@+id/did_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/did"
+            android:layout_below="@+id/tid"/>
+
+        </RelativeLayout>
+    -->
+
+</LinearLayout>
+
