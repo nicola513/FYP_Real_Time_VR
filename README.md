@@ -1,6 +1,7 @@
 <h1>Final Year Project</h1>
 <hr/>
-<h2>Group Member:<h2/><ul>
+<h2>Group Member:<h2/>
+<ul>
 	<li>Ng Tsz Ching Nicola</li>
 	<li>Kwok Pui Hei</li>
 	<li>Liu Ka Kin</li>
