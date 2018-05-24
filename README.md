@@ -1,15 +1,15 @@
 <h1>Final Year Project</h1>
-<hr/>
-<h2>Group Member:<h2/>
+
+<h2>Title: A Real Time Virtual Reality(VR)<h2/>
+
+Group Member:
 <ul>
 	<li>Ng Tsz Ching Nicola</li>
 	<li>Kwok Pui Hei</li>
 	<li>Liu Ka Kin</li>
 </ul>
 
-<h2>Title: A Real Time Virtual Reality(VR)<h2/>
-
-<h2>Abstract:</h2>
+Abstract:
 <p>To improve the relationship with our family and elderly, people may go to travel with them.But some elderly who cannot go to tourism because of their poor healthy although they really want to travel with their family. Because of this reason, we want to develop an application that can help the elderly to gain the experience for tourism with their family when they stay at home. Also, this application can improve the relationship between the elderly and their
 family.</p>
 
